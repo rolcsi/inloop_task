@@ -7,15 +7,29 @@
 //
 
 import UIKit
+import Swinject
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var assembler:Assembler?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        let assembler = Assembler([
+            AppAssembly(window)
+            ])
+        
+        self.window = window
+        self.assembler = assembler
+        
+//        let router = assembler.resolver ~> Router.self
+//        router.navigation.setRoot("/")
+        
+        window.makeKeyAndVisible()
+        
         return true
     }
 

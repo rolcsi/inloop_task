@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.5.0)
+  - DATASource (6.1.5)
+  - SwiftLint (0.20.1)
+  - Swinject (2.1.0)
+  - SwinjectAutoregistration (2.1.0):
+    - Swinject (~> 2.1)
+  - SwinjectStoryboard (1.1.1):
+    - Swinject (~> 2.0)
+  - Sync (3.3.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - DATASource (~> 6)
+  - SwiftLint
+  - Swinject (~> 2)
+  - SwinjectAutoregistration (~> 2)
+  - SwinjectStoryboard (~> 1)
+  - Sync (~> 3)
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  DATASource: 52b86cfff6c7ac3db45192c01f7839c7473576c3
+  SwiftLint: f60095dc173a3f3ec505bb34f5229c3dfd779a54
+  Swinject: 85e468ac75c5c2d234076f98c591d57d56bc64bc
+  SwinjectAutoregistration: 7d8ac2c23718c78286adf7590c6d0671b4ccc834
+  SwinjectStoryboard: 4c71c25f312322844d39ee06f0f523db7b9b10a3
+  Sync: 7bf0699de46e470d68dc5f1f8408e4c19536c71f
+
+PODFILE CHECKSUM: c32eeced34ee90918e2a1ecf28af0fd906c2a643
+
+COCOAPODS: 1.2.1
