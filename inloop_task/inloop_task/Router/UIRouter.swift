@@ -40,7 +40,7 @@ extension UI {
             let deeplink = self.unwrap(using: entrypoint, parameters:parameters)
             
             
-            guard let a = (self.resolver ~> AppCoordinator.self).start() else { return (option:.root,presentable:nil) }
+            guard let a = (self.resolver ~> OrdersCoordinator.self).start() else { return (option:.root,presentable:nil) }
             
             return (option:.root,presentable:a)
         }

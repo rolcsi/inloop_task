@@ -20,14 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let window = UIWindow(frame: UIScreen.main.bounds)
         let assembler = Assembler([
-            AppAssembly(window)
+            OrdersAssembly(window),
+            DetailAssembly()
             ])
         
         self.window = window
         self.assembler = assembler
         
         let router = assembler.resolver ~> UI.Router.self
-        router.navigation.setRoot("/")
+        
+        router.navigation.setRoot("/detail")
         
         window.makeKeyAndVisible()
         

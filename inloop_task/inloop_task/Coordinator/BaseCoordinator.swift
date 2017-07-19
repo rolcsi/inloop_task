@@ -11,12 +11,12 @@ import SwinjectAutoregistration
 
 public class BaseCoordinator: CoordinatorProtocol, CoordinatorDependencyProtocol {
     
-    public var dependencies:[CoordinatorDependencyProtocol] = []
+    public var dependencies: [CoordinatorDependencyProtocol] = []
     
-    public let resolver:Resolver
-    public let navigation:NavigationProtocol
+    public let resolver: Resolver
+    public let navigation: NavigationProtocol
     
-    public init(_ resolver:Resolver, navigation:NavigationProtocol) {
+    public init(_ resolver: Resolver, navigation: NavigationProtocol) {
         
         self.resolver = resolver
         self.navigation = navigation
