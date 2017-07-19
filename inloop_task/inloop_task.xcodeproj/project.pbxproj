@@ -25,6 +25,15 @@
 		C08E215A1F1E632400C4FCDA /* CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E21591F1E632400C4FCDA /* CollectionExtension.swift */; };
 		C08E215C1F1E64A200C4FCDA /* TraversingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E215B1F1E64A200C4FCDA /* TraversingExtension.swift */; };
 		C08E215E1F1E669300C4FCDA /* UIWindow+Traversing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E215D1F1E669300C4FCDA /* UIWindow+Traversing.swift */; };
+		C08E21621F1E751200C4FCDA /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E21611F1E751100C4FCDA /* BaseCoordinator.swift */; };
+		C08E21641F1E753600C4FCDA /* CoordinatorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E21631F1E753600C4FCDA /* CoordinatorExtension.swift */; };
+		C08E21661F1F390F00C4FCDA /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E21651F1F390F00C4FCDA /* AppCoordinator.swift */; };
+		C08E21681F1F3BD100C4FCDA /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E21671F1F3BD100C4FCDA /* Routes.swift */; };
+		C08E216B1F1F3C4F00C4FCDA /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E216A1F1F3C4F00C4FCDA /* AppViewModel.swift */; };
+		C08E216D1F1F3C7700C4FCDA /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E216C1F1F3C7700C4FCDA /* BaseViewModel.swift */; };
+		C08E21701F1F44D100C4FCDA /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E216F1F1F44D100C4FCDA /* AppController.swift */; };
+		C08E21721F1F457A00C4FCDA /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E21711F1F457A00C4FCDA /* BaseController.swift */; };
+		C08E21741F1F45B600C4FCDA /* UIViewController+Traversing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08E21731F1F45B600C4FCDA /* UIViewController+Traversing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +59,15 @@
 		C08E21591F1E632400C4FCDA /* CollectionExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionExtension.swift; sourceTree = "<group>"; };
 		C08E215B1F1E64A200C4FCDA /* TraversingExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraversingExtension.swift; sourceTree = "<group>"; };
 		C08E215D1F1E669300C4FCDA /* UIWindow+Traversing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Traversing.swift"; sourceTree = "<group>"; };
+		C08E21611F1E751100C4FCDA /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		C08E21631F1E753600C4FCDA /* CoordinatorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorExtension.swift; sourceTree = "<group>"; };
+		C08E21651F1F390F00C4FCDA /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		C08E21671F1F3BD100C4FCDA /* Routes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		C08E216A1F1F3C4F00C4FCDA /* AppViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		C08E216C1F1F3C7700C4FCDA /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		C08E216F1F1F44D100C4FCDA /* AppController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
+		C08E21711F1F457A00C4FCDA /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		C08E21731F1F45B600C4FCDA /* UIViewController+Traversing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Traversing.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +120,12 @@
 		C08E212F1F177CD200C4FCDA /* inloop_task */ = {
 			isa = PBXGroup;
 			children = (
+				C08E216E1F1F44BC00C4FCDA /* Views */,
+				C08E21601F1E74F300C4FCDA /* Coordinator */,
 				C08E21501F1E5F1A00C4FCDA /* Extensions */,
-				C08E21451F192E0700C4FCDA /* Router */,
 				C08E21421F19231A00C4FCDA /* Assembly */,
+				C08E21451F192E0700C4FCDA /* Router */,
+				C08E21691F1F3C3900C4FCDA /* ViewModels */,
 				C08E21301F177CD200C4FCDA /* AppDelegate.swift */,
 				C08E21321F177CD200C4FCDA /* ViewController.swift */,
 				C08E21341F177CD200C4FCDA /* Main.storyboard */,
@@ -113,6 +134,7 @@
 				C08E213C1F177CD200C4FCDA /* Info.plist */,
 				C08E214A1F1936D200C4FCDA /* Namespaces.swift */,
 				C08E214C1F1E5E2C00C4FCDA /* Enums.swift */,
+				C08E21671F1F3BD100C4FCDA /* Routes.swift */,
 			);
 			path = inloop_task;
 			sourceTree = "<group>";
@@ -121,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				C08E21431F19232B00C4FCDA /* AppAssembly.swift */,
+				C08E21651F1F390F00C4FCDA /* AppCoordinator.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -138,14 +161,42 @@
 		C08E21501F1E5F1A00C4FCDA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				C08E21511F1E5F3200C4FCDA /* RouterExtension.swift */,
+				C08E21631F1E753600C4FCDA /* CoordinatorExtension.swift */,
 				C08E21531F1E5FA400C4FCDA /* EntrypointExtension.swift */,
+				C08E21511F1E5F3200C4FCDA /* RouterExtension.swift */,
 				C08E21571F1E5FF500C4FCDA /* PresentableExtension.swift */,
-				C08E21591F1E632400C4FCDA /* CollectionExtension.swift */,
 				C08E215B1F1E64A200C4FCDA /* TraversingExtension.swift */,
+				C08E21591F1E632400C4FCDA /* CollectionExtension.swift */,
 				C08E215D1F1E669300C4FCDA /* UIWindow+Traversing.swift */,
+				C08E21731F1F45B600C4FCDA /* UIViewController+Traversing.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C08E21601F1E74F300C4FCDA /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				C08E21611F1E751100C4FCDA /* BaseCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		C08E21691F1F3C3900C4FCDA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C08E216A1F1F3C4F00C4FCDA /* AppViewModel.swift */,
+				C08E216C1F1F3C7700C4FCDA /* BaseViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C08E216E1F1F44BC00C4FCDA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C08E216F1F1F44D100C4FCDA /* AppController.swift */,
+				C08E21711F1F457A00C4FCDA /* BaseController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +206,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C08E213F1F177CD200C4FCDA /* Build configuration list for PBXNativeTarget "inloop_task" */;
 			buildPhases = (
-				C08E215F1F1E675900C4FCDA /* ShellScript */,
 				768BF53B674D586691C6AD35 /* [CP] Check Pods Manifest.lock */,
 				C08E21291F177CD200C4FCDA /* Sources */,
 				C08E212A1F177CD200C4FCDA /* Frameworks */,
@@ -251,19 +301,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C08E215F1F1E675900C4FCDA /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\ngit diff --cached --name-only | while read filename; do\nswiftlint lint --path \"$filename\";\ndone\nelse\necho \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint or use \\n brew update \\n brew install swiftlint\"\nexit 1\nfi\n";
-		};
 		E39856E343FBB325FAB04C88 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -286,20 +323,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C08E21521F1E5F3200C4FCDA /* RouterExtension.swift in Sources */,
-				C08E21471F192E1B00C4FCDA /* UIRouter.swift in Sources */,
 				C08E214B1F1936D200C4FCDA /* Namespaces.swift in Sources */,
-				C08E21441F19232B00C4FCDA /* AppAssembly.swift in Sources */,
-				C08E215E1F1E669300C4FCDA /* UIWindow+Traversing.swift in Sources */,
-				C08E21331F177CD200C4FCDA /* ViewController.swift in Sources */,
-				C08E215A1F1E632400C4FCDA /* CollectionExtension.swift in Sources */,
+				C08E216D1F1F3C7700C4FCDA /* BaseViewModel.swift in Sources */,
+				C08E21561F1E5FCB00C4FCDA /* UIDeeplink.swift in Sources */,
+				C08E216B1F1F3C4F00C4FCDA /* AppViewModel.swift in Sources */,
 				C08E21541F1E5FA400C4FCDA /* EntrypointExtension.swift in Sources */,
+				C08E215C1F1E64A200C4FCDA /* TraversingExtension.swift in Sources */,
+				C08E21521F1E5F3200C4FCDA /* RouterExtension.swift in Sources */,
+				C08E21741F1F45B600C4FCDA /* UIViewController+Traversing.swift in Sources */,
+				C08E21311F177CD200C4FCDA /* AppDelegate.swift in Sources */,
+				C08E21621F1E751200C4FCDA /* BaseCoordinator.swift in Sources */,
+				C08E21441F19232B00C4FCDA /* AppAssembly.swift in Sources */,
+				C08E21581F1E5FF500C4FCDA /* PresentableExtension.swift in Sources */,
 				C08E214D1F1E5E2C00C4FCDA /* Enums.swift in Sources */,
 				C08E214F1F1E5E9700C4FCDA /* UIRoute.swift in Sources */,
-				C08E21311F177CD200C4FCDA /* AppDelegate.swift in Sources */,
-				C08E215C1F1E64A200C4FCDA /* TraversingExtension.swift in Sources */,
-				C08E21581F1E5FF500C4FCDA /* PresentableExtension.swift in Sources */,
-				C08E21561F1E5FCB00C4FCDA /* UIDeeplink.swift in Sources */,
+				C08E215E1F1E669300C4FCDA /* UIWindow+Traversing.swift in Sources */,
+				C08E21331F177CD200C4FCDA /* ViewController.swift in Sources */,
+				C08E21681F1F3BD100C4FCDA /* Routes.swift in Sources */,
+				C08E21661F1F390F00C4FCDA /* AppCoordinator.swift in Sources */,
+				C08E21471F192E1B00C4FCDA /* UIRouter.swift in Sources */,
+				C08E215A1F1E632400C4FCDA /* CollectionExtension.swift in Sources */,
+				C08E21641F1E753600C4FCDA /* CoordinatorExtension.swift in Sources */,
+				C08E21721F1F457A00C4FCDA /* BaseController.swift in Sources */,
+				C08E21701F1F44D100C4FCDA /* AppController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

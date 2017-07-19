@@ -6,6 +6,7 @@
 //  Copyright © 2017 Roland Beke. All rights reserved.
 //
 
+import UIKit
 import Swinject
 import SwinjectAutoregistration
 
@@ -39,9 +40,9 @@ extension UI {
             let deeplink = self.unwrap(using: entrypoint, parameters:parameters)
             
             
-//            guard let a = (self.resolver ~> AppCoordinator.self).start() else { return (option:.root,presentable:nil) }
+            guard let a = (self.resolver ~> AppCoordinator.self).start() else { return (option:.root,presentable:nil) }
             
-            return (option:.root,presentable:nil)
+            return (option:.root,presentable:a)
         }
     }
     

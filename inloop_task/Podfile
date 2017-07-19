@@ -9,5 +9,4 @@ target ‘inloop_task’ do
 	pod 'Swinject', '~> 2'
     	pod 'SwinjectStoryboard', '~> 1'
 	pod 'SwinjectAutoregistration', '~> 2'
-	pod 'SwiftLint'
 end

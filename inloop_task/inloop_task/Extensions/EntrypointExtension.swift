@@ -33,12 +33,12 @@ extension URL: EntrypointConvertible {
     }
 }
 
-//extension UI.Deeplink: EntrypointConvertible {
-//    
-//    public var deeplink: UI.Deeplink {
-//        return self
-//    }
-//}
+extension UI.Deeplink: EntrypointConvertible {
+    
+    public var deeplink: UI.Deeplink {
+        return self
+    }
+}
 
 extension UIViewController: EntrypointConvertible {
     
@@ -46,11 +46,11 @@ extension UIViewController: EntrypointConvertible {
         return UI.Deeplink(usingPresentable: self)
     }
 }
-//
-//extension BaseCoordinator: EntrypointConvertible {
-//    
-//    public var deeplink: UI.Deeplink {
-//        return UI.Deeplink(usingPresentable: self)
-//    }
-//}
+
+extension BaseCoordinator: EntrypointConvertible {
+    
+    public var deeplink: UI.Deeplink {
+        return UI.Deeplink(usingPresentable: self)
+    }
+}
 
